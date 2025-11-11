@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruletka UZ+TJK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ruletka UZ+TJK</h1>
+
+    <div id="setupForm">
+      <label>Jinsingiz:</label>
+      <select id="gender">
+        <option value="male">O'g'il bola</option>
+        <option value="female">Qiz bola</option>
+      </select>
+
+      <label>Kim bilan tanishmoqchisiz?</label>
+      <select id="lookingFor">
+        <option value="male">O'g'il bola</option>
+        <option value="female">Qiz bola</option>
+      </select>
+
+      <label>Yoshingiz:</label>
+      <select id="age">
+        <option value="under16">-16</option>
+        <option value="16-25">16-25</option>
+        <option value="25-30">25-30</option>
+        <option value="30plus">30+</option>
+      </select>
+
+      <label>Kim bilan tanishmoqchisiz (yosh):</label>
+      <select id="lookingAge">
+        <option value="under16">-16</option>
+        <option value="16-25">16-25</option>
+        <option value="25-30">25-30</option>
+        <option value="30plus">30+</option>
+      </select>
+
+      <button id="startBtn">Boshlash</button>
+    </div>
+
+    <div id="chatContainer" style="display:none;">
+      <canvas id="chatCanvas" width="400" height="500"></canvas>
+      <input type="text" id="messageInput" placeholder="Xabaringizni yozing...">
+      <button id="sendBtn">Yuborish</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
