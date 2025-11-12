@@ -1,6 +1,7 @@
 {
   "name": "ruletka-chat",
   "version": "1.0.0",
+  "description": "Ruletka UZ+TJK chat",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
